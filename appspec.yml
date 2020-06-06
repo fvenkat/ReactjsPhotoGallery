@@ -5,10 +5,10 @@ files:
           destination: /usr/share/nginx/
 hooks:
         BeforeInstall:
-                - location: scripts/stop_server.sh
+                - location: scripts/nginx_stop.sh
                   timeout:300
                   runas: root
         AfterInstall:
-                - location: scripts/start_server.sh
+                - location: scripts/nginx_server.sh
                   timeout:300
                   runas: root
