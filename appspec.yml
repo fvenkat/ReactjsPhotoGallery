@@ -1,14 +1,14 @@
 version: 0.0
 os: linux
 files:
-        - source: /build
-          destination: /usr/share/nginx/
+        - source: ./build
+          destination: /usr/share/nginx/build/
 hooks:
-        BeforeInstall:
+       BeforeInstall:
                 - location: scripts/nginx_stop.sh
-                  timeout:300
+                  timeout: 300
                   runas: root
-        AfterInstall:
-                - location: scripts/nginx_server.sh
-                  timeout:300
+       AfterInstall:
+                - location: scripts/nginx_start.sh
+                  timeout: 300
                   runas: root
