@@ -2,7 +2,7 @@ cd C:\Users\naveen_gayar\Documents\GitHub\VodafonePhotoGallery .
 Here naveen_gayar can be replaced with username
 
 
-### `npm install`
+#### `npm install`
 
 ### `npm start`
 
